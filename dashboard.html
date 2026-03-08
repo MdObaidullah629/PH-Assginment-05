@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Issues Dashboard</title>
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-100">
+
+<!-- Navbar -->
+
+<div class="navbar bg-white shadow-md px-6">
+
+<div class="flex-1">
+<h2 class="text-xl font-bold text-gray-800">
+GitHub Issues Tracker
+</h2>
+</div>
+
+<div class="flex gap-2">
+
+<input
+id="searchInput"
+type="text"
+placeholder="Search issues"
+class="input input-bordered bg-white text-gray-800"
+/>
+
+<button
+onclick="searchIssues()"
+class="btn btn-primary text-white"
+>
+Search
+</button>
+
+</div>
+
+</div>
+
+<div class="max-w-7xl mx-auto py-8 px-6">
+
+<!-- Tabs -->
+
+<div class="tabs tabs-boxed bg-white p-1 mb-6 rounded-lg">
+
+<button id="allTab" class="tab tab-active" onclick="showAll()">
+All
+</button>
+
+<button id="openTab" class="tab" onclick="showOpen()">
+Open
+</button>
+
+<button id="closedTab" class="tab" onclick="showClosed()">
+Closed
+</button>
+
+</div>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
