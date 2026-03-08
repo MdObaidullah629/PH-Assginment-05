@@ -63,6 +63,70 @@ Closed
 </button>
 
 </div>
+<!-- Issue Info -->
+
+<div class="flex justify-between items-center mb-6">
+    <!-- Loading Spinner -->
+
+<div id="spinner" class="text-center hidden">
+
+<span class="loading loading-spinner loading-lg"></span>
+
+</div>
+
+<div>
+
+<p class="font-semibold">
+<span id="issueCount">0</span> Issues
+</p>
+
+<p class="text-sm text-gray-500">
+Track and manage your project issues
+</p>
+
+</div>
+
+<div class="flex gap-4 text-sm">
+
+<p class="text-green-600">● Open</p>
+<p class="text-purple-600">● Closed</p>
+
+</div>
+
+</div>
+
+<!-- Spinner -->
+
+<div id="spinner" class="text-center hidden">
+
+<span class="loading loading-spinner loading-lg"></span>
+
+</div>
+
+<!-- Issue Cards -->
+
+<div
+id="issuesContainer"
+class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
+>
+
+</div>
+
+</div>
+
+<!-- Modal -->
+
+<dialog id="issueModal" class="modal">
+
+<div class="modal-box" id="modalContent">
+
+</div>
+
+<form method="dialog" class="modal-backdrop">
+<button>close</button>
+</form>
+
+</dialog>
 
 <script src="js/app.js"></script>
 
