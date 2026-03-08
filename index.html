@@ -1,11 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GitHub Issues Tracker</title>
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body>
-    git cheacker project start
+
+<body class="bg-gray-100 flex justify-center items-center min-h-screen">
+
+<div class="card w-96 bg-white shadow-2xl p-8 rounded-xl">
+
+<div class="text-center mb-6">
+
+<img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" class="w-16 mx-auto mb-3">
+
+<h2 class="text-2xl font-bold text-gray-800">
+GitHub Issues Tracker
+</h2>
+
+<p class="text-gray-700">
+Sign in to manage your issues
+</p>
+
+</div>
+
+<input
+id="username"
+type="text"
+placeholder="Enter Username"
+class="input input-bordered w-full mb-2 bg-white text-gray-800"
+/>
+
+<p class="text-xs text-purple-500 mb-4">
+Default: admin
+</p>
+
+<input
+id="password"
+type="password"
+placeholder="Enter Password"
+class="input input-bordered w-full mb-2 bg-white text-gray-800"
+/>
+
+<p class="text-xs text-purple-500 mb-4">
+Default: admin123
+</p>
+
+<button
+onclick="login()"
+class="btn btn-primary w-full"
+>
+Sign In
+</button>
+
+<div class="divider">OR</div>
+
+<div class="bg-base-200 p-3 rounded text-sm text-center">
+
+Username: admin  
+Password: admin123
+
+</div>
+
+</div>
+
+<script src="js/login.js"></script>
+
 </body>
 </html>
